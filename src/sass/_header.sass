@@ -35,8 +35,11 @@
             font-size: 12px
             font-weight: 400
             text-transform: uppercase  
+            outline: none
             width: 150px
-            height: 30px 
+            height: 30px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #FF8989 100%)
     &__description
         margin-top: 91px
     &__heading
@@ -76,3 +79,7 @@
         +btn
         width: 300px
         display: inline-block
+        outline: none
+        &:hover
+            background-image: linear-gradient(to top, $main-color 0%, #FF8989 100%)
+            
