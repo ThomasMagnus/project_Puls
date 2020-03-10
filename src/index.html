@@ -85,7 +85,7 @@
                             <img src="img/shoe.png" alt="Кросовок">
                         </div>
                         <h3>Учим бегать</h3>
-                        <p>Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <span class="adv__love">I LOVE RUNNING.</span></p>
+                        <p>Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#" class="adv__love">I LOVE RUNNING.</a></p>
                     </li>
                 </ul>
             </div>
@@ -95,14 +95,28 @@
                 <h2>Получите бесплатную консультацию по подбору пульсометра </h2>
                 <p>Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</p>
                 <form class="callBack__form" action="#" method="POST">
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="tel" name="phone" placeholder="Ваш телефон">
-                    <input type="email" name="email" placeholder="Ваш E-mail">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                    <input type="email" name="email" placeholder="Ваш E-mail" required>
                     <input type="submit" value="заказать консультацию">
                 </form>
             </div>
         </section>
-    </main>
-</body>
 
+        <section class="slider">
+            <div class="container">
+                <div class="slider__photos">
+                    <div class="slider__courusel">
+                        <div class="slider__items"><img src="img/watch_1.jpg" alt=""></div>
+                        <div class="slider__items"><img src="img/watch_2.jpg" alt=""></div>
+                        <div class="slider__items"><img src="img/watch_3.jpg" alt=""></div>
+                    </div>
+                    <button class="slider__btn slider__btn-left"><img src="img/arrow_left.svg" alt=""></button>
+                    <button class="slider__btn slider__btn-right"><img src="img/arrow_right.svg" alt=""></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
