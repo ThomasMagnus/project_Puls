@@ -69,34 +69,23 @@
             background-image: linear-gradient(to top, $main-color 0%, #FF8989 100%)
 
 .slider
-    padding: 105px 0 108px 0
-    &__photos
-        display: flex
-        justify-content: center
-        align-items: center
-        position: relative 
-    &__items
-        img
-            height: 500px
-            width: 750px
-            display: none
-            &:first-child
-                display: block
-    &__btn
-        border-style: none
-        display: block
-        cursor: pointer
-        outline: none
-        background-color: #fff
-        position: absolute
-        &-left
-            top: 50%
-            transform: translate(-50%)
-            left: 50px
-        &-right
-            top: 50%
-            transform: translate(-50%)
-            right: 50px
+    padding: 81px 0
+    &__courusel
+        width: 750px
+        margin: 0 auto
+.slick-prev, 
+.slick-next
+    border-style: none
+    cursor: pointer
+    background-color: #fff
+    position: absolute
+    outline: none
+    top: 50%
+    transform: translateY(-50%)
+.slick-prev
+    left: -66px
+.slick-next
+    right: -66px
 
         
                 
