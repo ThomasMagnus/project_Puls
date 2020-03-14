@@ -36,19 +36,31 @@
                 box-shadow: none
     &__btn
         transform: skewX(25deg)
+    &__flex
+        display: none
+        flex-wrap: wrap
+        &_active
+            display: flex
     &__tab
         width: 300px
         height: 440px
         border: 2px solid #e8e8e8
+        overflow: hidden
+        margin: 8px 8px
         hr
             width: 260px
             height: 1px
             margin: 0 auto
+            border-bottom: none
         .content
             padding-top: 20px
             text-align: center
-            margin-right: 20px
+            margin-left: 20px
             width: calc(50% + 40px)
+            transition: 0.5s transform linear
+            &__active
+                transform: translateX(-100%)
+                margin: 0
             &__img
                 margin: 0 auto
                 width: 140px
@@ -85,14 +97,30 @@
                     font-weight: 700
                 button
                     +btn
+                    transition: 0.2s background-color linear
+                    &:hover
+                        background-color: lighten($main-color, 8%)
     &__wrapper
         display: flex
         width: 200%
         &__list-items
             width: 50%
-            margin-left: 20px
+            margin-left: 40px
             list-style-type: none
-            padding: 18px 22px 117px 0
+            padding: 18px 22px 19px 20px
+            position: relative
+            transition: 0.5s transform linear
+    &-item__back
+        position: absolute
+        bottom: 20px
+        left: 50%
+        transform: translateX(calc(-50% - 20px));
+        display: block
+        font-size: 14px
+        font-weight: 500
+        text-transform: uppercase
+        text-decoration: underline
+        color: $main-color
     &__list-items
         color: #555555
         font-size: 14px
@@ -107,6 +135,9 @@
             position: absolute
             top: 5px
             left: -14px
+.list-items-active
+    transform: translateX(-100%)
+        
 
 
             
