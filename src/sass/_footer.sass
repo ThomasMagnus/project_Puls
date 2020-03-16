@@ -1,0 +1,56 @@
+.main_footer
+    color: #fff
+    position: relative
+    &__contacts
+        box-sizing: border-box
+        background-color: $main-color
+        position: absolute 
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        text-align: center
+        width: 460px
+        height: 270px
+        padding: 50px 68px 72px 68px
+        address
+            font-size: 20px
+            font-weight: 500
+            font-style: normal
+        a
+            display: block
+            color: #fff
+            margin-top: 36px
+            font-size: 20px
+            text-decoration: none
+            &:hover
+                text-decoration: underline
+    &__social
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 210px
+        margin: 0 auto
+        a
+            display: block
+            border: 2px solid #fff
+            border-radius: 100%
+            width: 50px
+            height: 50px
+        .facebook
+            background: url('../img/facebook.png') center center no-repeat
+            transition: 0.3s background linear
+            &:hover
+                background: url('../img/facebook.svg') center center no-repeat #fff
+        .instagram
+            background: url('../img/instagram.png') center center no-repeat
+            transition: 0.3s background linear
+            &:hover
+                background: url('../img/instagram.svg') center center no-repeat #fff
+        .printest
+            background: url('../img/print.png') center center no-repeat
+            transition: 0.3s background linear
+            &:hover
+                background: url('../img/print.svg') center center no-repeat #fff
+
+        
+            

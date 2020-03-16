@@ -10,8 +10,13 @@ $(document).ready(function(){
             {
                 breakpoint: 992,
                 settings: {
-                    dots: true,
-                    arrows: false
+                    dots: false,
+                    arrows: false,
+                    dotsClass: 'slick-dots slider__dots',
+                    customPaging: function(slick, index) {
+                      var image = $(slick.$slides[index]).find('.slider__img').attr('src');
+                      return '<img src="' + image + '" alt="" /> '
+                    }
                 }
             }
         ]
