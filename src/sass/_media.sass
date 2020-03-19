@@ -1,11 +1,37 @@
 @media (max-width: 991px)
-    *:hover
-        none
+    .container
+        max-width: 768px !important
     .promo
+        min-height: 580px
+        width: 100%
+        background: url('../img/bg1.jpg') center center/cover no-repeat
+        &__heading
+            h1
+                font-size: 35px
+            h2
+                font-size: 18px
+        &__option
+            width: 110px
+            span
+                font-size: 14px
         &__description
             padding-right: 20px
     .callBack
-        padding-left: 30px
+        .container
+            margin-left: 30px
+            width: 718px !important
+        h2
+            font-size: 25px
+            width: 700px
+        p
+            margin-top: 50px
+            font-size: 18px
+        &__form
+            input
+                width: 290px
+                height: 45px
+            input[type="submit"]
+                font-size: 15px
     .comments
         &__users
             justify-content: center
@@ -19,6 +45,35 @@
             p   
                 margin-top: 15px
                 font-size: 14px
+    .adv
+        .container
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+        &__list
+            flex-wrap: wrap
+        &__item
+            &:last-child
+                margin-top: 30px
+    .slider
+        &__items
+            img
+                width: 70%
+                margin: 0 auto
+    .catalog
+        h2
+            font-size: 27px
+        &__items
+            width: 200px
+        &__flex
+            justify-content: center
+    .comments
+        h2
+            font-size: 27px
+        &__users_wrapper
+            text-align: center
+            margin: 20px 0 0 0
     .main_footer
         &__contacts
             width: 420px;
