@@ -13,6 +13,26 @@ $(document).ready(function(){
                     dots: false,
                     arrows: false,
                 }
+            },
+
+            {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  dots: false,
+                  arrows: false
+                }
+            },
+
+            {
+                breakpoint: 575,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  dots: false,
+                  arrows: false
+                }
             }
         ]
     });
