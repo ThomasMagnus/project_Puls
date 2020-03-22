@@ -56,25 +56,22 @@ $(document).ready(function(){
         .closest('div.container').find('div.catalog__flex').removeClass('catalog__flex_active').eq($(this).index()).addClass('catalog__flex_active');
   });
 
+  //Modal windiws
+
+  $('[data-modal=consultation]').on('click', function(){
+    $('.modal, #consultation').fadeIn('slow');
   });
 
-// var slider = tns({
-//     container: '.slider__courusel',
-//     items: 1,
-//     slideBy: 'page',
-//     controls: false,
-//     nav: false,
-//     // autoplay: true,
-//     // autoplayButtonOutput: false,
-//     // autoplayTimeout: 4000,
-//     mouseDrag: true,
-//     autoHeight: true
-//   });
+  $('.modal__close').on('click', function(){
+    $('.modal, #consultation').fadeOut();
+  });
 
-//   document.querySelector('.slick-prev').onclick = function () {
-//     slider.goTo('prev');
-//   };
+  $('.catalog__tab, .order__btn').each(function(i){
+    $(this).on('click', function(){
+      $('.modal__descr').text($('.content__title').eq(i).text());
+      $('.modal, #order').fadeIn('slow');
+    })
+  });
 
-//   document.querySelector('.slick-next').onclick = function () {
-//     slider.goTo('next');
-//   };
+  });
+

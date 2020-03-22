@@ -97,7 +97,6 @@
             &__text-bottom
                 margin-top: 8px
         &__heading
-            text-align: center
             h1
                 font-size: 30px
         &__description
@@ -126,6 +125,22 @@
         &__users
             width: 500px
             margin: 0 auto
+    .modal
+        &__window
+            width: 250px
+            min-height: 300px !important
+            padding: 20px 20px !important
+            top: 30% !important
+        &__title
+            font-size: 15px !important
+        &__descr
+            font-size: 12px !important
+        &__form
+            margin-top: 10px
+            input
+                width: 100%
+            input[type="submit"]
+                font-size: 12px
 
 @media screen and ( max-width: 575px)
     .container
@@ -198,6 +213,19 @@
                 background-size: 12px
             .printest
                 background-size: 12px
+    .modal
+        &__window
+            width: 250px
+            padding-bottom: 20px
+        &__title
+            font-size: 15px !important
+        &__descr
+            font-size: 12px !important
+        &__form
+            input
+                width: 100%
+            input[type="submit"]
+                font-size: 12px
 
     
 
